@@ -1,2 +1,2 @@
 # Ophir-Gold
-Contains wensite folder for ophir gold
+Contains website folder for Ophir Gold
