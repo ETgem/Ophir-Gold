@@ -1,0 +1,309 @@
+
+* {
+box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(2, 48, 71);
+    font-size: 1em;
+}
+
+.wrapper{ 
+    margin: 0.5%;
+    padding: 0em;
+}
+
+.container{
+    position: relative;
+    background-image:linear-gradient( 90deg,rgba(62, 133, 163,0.0),rgba(222, 236, 242, 1.0));
+    border-bottom-right-radius:8em;
+   /** border-top: 1px solid #CC8700**/
+}
+
+.container::before,
+.container::after{
+    content:'';
+    position: absolute;
+    height: 6em;
+    bottom:-4.3em;
+    right: 0;
+    left: 0;
+    background: white;
+    transform:skewY(-1.5deg);
+    -o-transform: skewY(-1.5deg);
+    -webkit-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+}
+
+.overbar{
+    width:100%;
+    height: 2vh;
+    background-color: #3a78c0a3;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1{
+    color: #CC8700;
+    font-size: 1.5em ;
+    margin-left: 0.1em;
+}
+
+.gold{
+    color: #523106;
+}
+
+.logogroup{
+    display: flex;
+    align-items: center;
+    width:auto;
+    padding-left: 2.2em;
+}
+
+a{ 
+    text-decoration: none;
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
+    border: 1px solid #bc8600;
+    border-radius: 0.5em;
+    color: rgb(2, 48, 71);
+}
+
+.logo{ 
+    width: 30%;
+    min-width: 6em;
+    height: auto;
+    float:left;
+}
+
+
+/* Actual hero section*/
+
+.hero{
+    width: 70%;
+    text-align: left;
+    padding:2.5em 3em;
+}
+
+.hero h1{
+    font-size: 2.3em;
+    font-family:'Cinzel', serif;
+    font-weight: normal;
+    color: rgb(2, 48, 71);
+}
+
+.hero p{
+    font-size: 1em;
+    padding-bottom: 2em ;
+    color: rgb(2, 48, 71);
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero a{
+    color:rgb(255, 183, 3);
+    background: rgba(2, 48, 71,0.9);
+    margin: 0 auto;
+    border: 1px solid #f3f3f5;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.pack1{
+    position: absolute;
+    bottom: -4em;
+    right:4.5em;
+    float: right;
+    width:10em;
+    z-index:1;
+}
+
+.pack2{
+    position:absolute;
+    bottom: -1.5em;
+    right:0em;
+    float: right;
+    width:10em;
+    z-index: 1;    
+    line-height: 1.5em;
+}
+
+    /* showing advantages of product */ 
+
+.uses {
+    z-index: 1;
+    position: relative;
+}
+
+.uses>h1{
+    font-size: 3em;
+    margin-left:27%;
+    margin-top: 1em;
+    margin-bottom:0.7em;
+    font-family: 'Expletus Sans', cursive;
+}
+
+.smallG{
+    font-size: ;
+    color:#B77A1E;
+}
+
+.reasons{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 0.5em 1em;
+    line-height: 1.5em;
+
+}
+
+.reasons h1{
+    margin-top:0.5em;
+    font-family: ;
+}
+
+.fas{
+    padding-right: 1em;
+    color:rgb(255, 183, 3);
+}
+
+.product{
+    padding: 0em 1.5em;
+}
+
+.product p{
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.approval{
+    position:absolute;
+    z-index: 1;
+    left:5em;
+    top:0
+}
+
+    /* Showing uses of product, Something for evryone */ 
+
+.demonstration{
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(2, 48, 71);
+    position: relative;
+    overflow:hidden;
+}
+
+.demonstration::before,
+.demonstration::after{
+    content:'';
+    position: absolute;
+    width:105%;
+    height: 5em;
+    top:-3em;
+    left: 0;
+    right: 0;
+    background: white;
+    transform:skewY(-1.5deg);
+    -o-transform: skewY(-1.5deg);
+    -webkit-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+}
+
+figcaption{
+    color:white;
+    text-align: center;
+    margin-top: -6em;
+    margin-bottom: 4em;
+    background: rgba(0, 0, 0, 0.336);
+    z-index: 1;
+}
+
+.pics{
+    padding:6em 0em 3em 0em;
+}
+
+/** Footer**/
+
+footer{
+    color: rgb(2, 48, 71);
+    background: #219ebc69;
+    font-size: 0.9em;
+}
+
+footer h1,h2{
+    font-size: 1.25em;
+}
+
+footer .social{
+    text-align:center;
+    margin:0 auto;
+}
+
+footer .fab{
+    font-size:2.5em;
+    padding: 0.5em 1em 0.9em;
+}
+
+footer .second{
+    display:flex;
+    justify-content:space-around;
+    gap:1em;
+    margin-bottom:0em;
+}
+
+
+address{
+    font-style: normal;
+}
+
+.mail{
+    display: flex;
+    justify-content: flex-start;
+    gap:2em;
+    margin: 0 auto 0;
+}
+
+.mail .fa{
+    font-size:1.5em;
+}
+
+footer .design{
+    padding: 0.5em 2em;
+    text-align:right;
+    font-size: 0.7em;
+    line-height:0.5em;
+    color: white;
+    margin:0 0;
+    background-color: rgba(0, 2, 3, 0.3);
+}
+
+.eggold{
+    width:80%;
+}
+
+footer a{
+    border: none;
+    margin-left: 0em;
+    padding-left:0em;
+}
+
+footer ul{
+    padding-left:1em;
+}
+/** styles for smartphones**/
+
+@media 
+
+
+
+/**ABOUT**/
+/**PRODUCT**/
+/**CONTACT**/
