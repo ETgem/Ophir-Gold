@@ -220,14 +220,14 @@ a{
 figcaption{
     color:white;
     text-align: center;
-    margin-top: -6em;
-    margin-bottom: 4em;
-    background: rgba(0, 0, 0, 0.336);
+    margin-top: 1em;
     z-index: 1;
+    font-family:'Cinzel', serif;
+
 }
 
 .pics{
-    padding:6em 0em 3em 0em;
+    padding:6em 0em 0em 0em;
 }
 
 /** Footer**/
@@ -282,7 +282,7 @@ footer .design{
     line-height:0.5em;
     color: white;
     margin:0 0;
-    background-color: rgba(0, 2, 3, 0.3);
+    background-color: rgb(2, 48, 71);
 }
 
 .eggold{
