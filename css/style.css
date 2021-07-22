@@ -249,9 +249,19 @@ footer .social{
     margin:0 auto;
 }
 
+footer .links{
+    padding: 2em auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
 footer .fab{
-    font-size:2.5em;
-    padding: 0.5em 1em 0.9em;
+    font-size:2.2em;
+    padding: 0.5em 1em;
+}
+
+footer .fa {
+    padding: 0 1em 0 0.5em;
 }
 
 footer .second{
@@ -266,15 +276,8 @@ address{
     font-style: normal;
 }
 
-.mail{
-    display: flex;
-    justify-content: flex-start;
-    gap:2em;
-    margin: 0 auto 0;
-}
-
-.mail .fa{
-    font-size:1.5em;
+.indent{
+    padding-left:2.5em;
 }
 
 footer .design{
@@ -321,6 +324,7 @@ fieldset{
     width: 50%;
     padding: 2em;
     margin: 1em;
+    border-radius: 0.5em;
 }
 
 .containercontact{
@@ -336,9 +340,14 @@ input,textarea{
     width:60%;
 }
 
+textarea{
+    
+}
+
 .actions{
     margin: 0 auto;
     text-align: center;
     width:40%;
     border-radius:1em;
 }
+
