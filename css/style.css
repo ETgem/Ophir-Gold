@@ -18,7 +18,6 @@ body{
     position: relative;
     background-image:linear-gradient( 90deg,rgba(62, 133, 163,0.0),rgba(222, 236, 242, 1.0));
     border-bottom-right-radius:8em;
-   /** border-top: 1px solid #CC8700**/
 }
 
 .container::before,
@@ -222,12 +221,15 @@ figcaption{
     text-align: center;
     margin-top: 1em;
     z-index: 1;
-    font-family:'Cinzel', serif;
-
 }
 
 .pics{
     padding:6em 0em 0em 0em;
+    border-radius: 0.6em;
+}
+
+.users{
+    box-shadow: #B77A1E;
 }
 
 /** Footer**/
@@ -300,10 +302,43 @@ footer ul{
 }
 /** styles for smartphones**/
 
-@media 
+/**
+@media {
+    fieldset{
+        width:80%;
+
+    }
+}
+**/
 
 
 
 /**ABOUT**/
 /**PRODUCT**/
 /**CONTACT**/
+
+fieldset{
+    width: 50%;
+    padding: 2em;
+    margin: 1em;
+}
+
+.containercontact{
+    position: relative;
+    background-image:linear-gradient( 90deg,rgba(62, 133, 163,0.0),rgba(222, 236, 242, 1.0));
+}
+
+Label{
+    padding-right:2em;
+}
+
+input,textarea{
+    width:60%;
+}
+
+.actions{
+    margin: 0 auto;
+    text-align: center;
+    width:40%;
+    border-radius:1em;
+}
