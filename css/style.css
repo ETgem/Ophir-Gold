@@ -73,8 +73,8 @@ a{
     color: rgb(2, 48, 71);
 }
 
-nav a:hover, .reasons a:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+nav a:hover, .reasons a:hover{
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgb(2, 48, 71);
 }
 
@@ -294,6 +294,7 @@ footer .design{
 
 .eggold{
     width:80%;
+    margin-top: 1em;
 }
 
 footer a{
@@ -327,8 +328,8 @@ footer ul{
 .chero{
     width: 70%;
     text-align: left;
-    padding:2.5em 3em;
-    margin-left: 6em;
+    padding:2.5em 0em;
+    margin-left: 2.5em;
 }
 
 .chero h1{
@@ -344,11 +345,12 @@ footer ul{
     color: rgb(2, 48, 71);
     line-height: 1.5em;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 0.3em;
 }
 .cmain{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     position: relative;
     z-index:1;
     margin: 2em;
@@ -357,7 +359,7 @@ footer ul{
 .csocial{
     flex-basis: 40%;
     padding: 2em 2em 1em 2em;
-    margin: 1em;
+    margin: 0.5em;
     border-radius: 0.5em;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -377,14 +379,15 @@ footer ul{
     flex-basis: 40%;
     border: none;
     background-color: white;
-    padding: 2em 2em 0em 2em;
-    margin: 1em;
+    padding: 3em 2em 0em 6em;
+    margin: 0.5em;
     border-radius: 0.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.ccontacts a:hover{
-    border: 1px solid rgb(2, 48, 71);
+.form h2{
+    margin: 0 0 3em 0.5em;
+    padding:0;
 }
 
 .caddress{
@@ -394,7 +397,7 @@ footer ul{
 
 .caddress h2{
     font-weight: bold;
-    margin-bottom: 0em ;
+    margin-bottom: 2em 0 0 ;
 }
 
 .csocial .fab, .fa{
@@ -454,7 +457,7 @@ input[type=email]{
     margin: 0 auto;
     text-align: center;
     width:40%;
-    padding: 1em 1em 2em;
+    padding: 1em 3em 2em 0em;
 }
 
 legend{
