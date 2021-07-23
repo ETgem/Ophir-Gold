@@ -10,7 +10,7 @@ body{
 }
 
 .wrapper{ 
-    margin: 0.5%;
+    margin: 0 0.5%;
     padding: 0em;
 }
 
@@ -71,6 +71,11 @@ a{
     border: 1px solid #bc8600;
     border-radius: 0.5em;
     color: rgb(2, 48, 71);
+}
+
+nav a:hover, .reasons a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(2, 48, 71);
 }
 
 .logo{ 
@@ -224,12 +229,9 @@ figcaption{
 }
 
 .pics{
-    padding:6em 0em 0em 0em;
-    border-radius: 0.6em;
-}
-
-.users{
-    box-shadow: #B77A1E;
+    margin-top: 4em;
+    border-radius: 0.6em; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /** Footer**/
@@ -250,7 +252,7 @@ footer .social{
 }
 
 footer .links{
-    padding: 2em auto;
+    padding: 5em auto;
     text-align: center;
     font-size: 1.2em;
 }
@@ -277,7 +279,7 @@ address{
 }
 
 .indent{
-    padding-left:2.5em;
+    padding-left:4.5em;
 }
 
 footer .design{
@@ -300,15 +302,18 @@ footer a{
     padding-left:0em;
 }
 
+footer a:hover{
+    text-decoration: underline;
+}
+
 footer ul{
     padding-left:1em;
 }
 /** styles for smartphones**/
 
 /**
-@media {
-    fieldset{
-        width:80%;
+@media screen and (){
+    
 
     }
 }
@@ -319,35 +324,139 @@ footer ul{
 /**ABOUT**/
 /**PRODUCT**/
 /**CONTACT**/
-
-fieldset{
-    width: 50%;
-    padding: 2em;
-    margin: 1em;
-    border-radius: 0.5em;
+.chero{
+    width: 70%;
+    text-align: left;
+    padding:2.5em 3em;
+    margin-left: 6em;
 }
 
-.containercontact{
+.chero h1{
+    font-size: 2.3em;
+    font-family:'Cinzel', serif;
+    font-weight: bold;
+    color: rgb(2, 48, 71);
+}
+
+.chero p{
+    font-size: 1em;
+    padding-bottom: 2em ;
+    color: rgb(2, 48, 71);
+    line-height: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+.cmain{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index:1;
+    margin: 2em;
+}
+
+.csocial{
+    flex-basis: 40%;
+    padding: 2em 2em 1em 2em;
+    margin: 1em;
+    border-radius: 0.5em;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.csocial a{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.csocial a:hover{
+    text-decoration: underline;
+    color:#bc8600 ;
+}
+.ccontacts{
+    flex-basis: 40%;
+    border: none;
+    background-color: white;
+    padding: 2em 2em 0em 2em;
+    margin: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ccontacts a:hover{
+    border: 1px solid rgb(2, 48, 71);
+}
+
+.caddress{
+    display:flex;
+    justify-content: left;
+}
+
+.caddress h2{
+    font-weight: bold;
+    margin-bottom: 0em ;
+}
+
+.csocial .fab, .fa{
+    margin: 0 1em 0 1em;
+    padding: 0.2em 0.5em;
+}
+
+.cindent{
+    padding-left: 8em;
+}
+
+.ccontainer{
     position: relative;
     background-image:linear-gradient( 90deg,rgba(62, 133, 163,0.0),rgba(222, 236, 242, 1.0));
 }
 
+.ccontainer::before,
+.ccontainer::after{
+    content:'';
+    position: absolute;
+    height: 6em;
+    width:105%;
+    bottom:-4.3em;
+    right: 0;
+    left: 0;
+    background: white;
+    transform:skewY(-1.6deg);
+    -o-transform: skewY(-1.6deg);
+    -webkit-transform: skewY(-1.6deg);
+    -ms-transform: skewY(-1.6deg);
+}
+
+
 Label{
-    padding-right:2em;
+    margin:1em 1em 1em 0.5em;
+    font-weight: bold;
 }
 
 input,textarea{
-    width:60%;
+    width:80%;
+    padding:0.5em;
+    margin:0.5em;
 }
 
-textarea{
-    
+input[type=submit]{
+    padding:1em;
+    border-radius:0.5em;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=email]{
+    margin-left: 0.6em;
 }
 
 .actions{
     margin: 0 auto;
     text-align: center;
     width:40%;
-    border-radius:1em;
+    padding: 1em 1em 2em;
 }
 
+legend{
+    padding:1em;
+}
