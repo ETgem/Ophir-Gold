@@ -15,6 +15,15 @@ body{
     padding: 0em;
 }
 
+a{ 
+    text-decoration: none;
+    margin: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
+    border: 1px solid #bc8600;
+    border-radius: 0.5em;
+    color: rgb(2, 48, 71);
+}
+
 .container{
     display: flex;
     position: relative;
@@ -66,16 +75,22 @@ body{
     padding-left: 2.2em;
 }
 
-a{ 
-    text-decoration: none;
-    margin: 0.5em 0.5em;
-    padding: 0.5em 0.5em;
+  /* (B) HORIZONTAL MENU ITEMS */
+ .menu { 
+     display: flex;
+ }
+  /* (C) HIDE HAMBURGER */
+  #hamnav label, #hamburger { display: none; }
+
+.menu a{ 
     border: 1px solid #bc8600;
     border-radius: 0.5em;
-    color: rgb(2, 48, 71);
+    color: rgb(2, 48, 71); 
+    text-align: center;
+    align-items: center;
 }
 
-nav a:hover, .reasons a:hover{
+.menu a:hover, .reasons a:hover{
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 5px 0 rgba(0, 0, 0, 0.19);
     border: 1px solid rgb(2, 48, 71);
 }
@@ -112,12 +127,14 @@ nav a:hover, .reasons a:hover{
 }
 
 .hero a{
-    color:rgb(255, 183, 3);
-    background: rgba(2, 48, 71,0.9);
+    color:#bc8600;
+    background: rgba(222, 236, 242, 1.0);
     margin: 0 auto;
-    border: 1px solid #f3f3f5;
+    border: 1px solid black;
     border-radius: 0.5em;
     padding: 1em;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .product-img{
@@ -320,21 +337,59 @@ footer ul{
 
 /* Mobile Devices*/
 @media (max-width: 500px){
-    .hero,.product-img,.container,.uses,.reasons,.showuse,.approval{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin:0 auto;
+    .hero,.product-img,.container,.uses,.reasons,.showuse,.approval,.demostration{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu { 
+        display: none; 
+    }
+
+
+    .menu a{
+        box-sizing: border-box;
+        display: block;
+        width: 100%;           
+        border-top: 1px solid #333;
+    }
+
+    #hamnav label { 
+        display: inline-block; 
+        color: black;
+        background: #white;
+        font-style: italic;
+        font-size: 1.8em;
+        padding: 10px;
+        font-weight: Normal;
+    }
+
+    #hamnav label[for="hamburger"] { font-size: XX em }
+
+
+    #hamnav input:checked ~ .menu { 
+        display: block; 
+    }
+
+    .menu a:hover,.menu a:focus, .menu a:active{
+
     }
 
     .container{
-        padding:1.5em 0.6em 6em 0.6em;
+        padding:1rem 0.5em 7em 0.5em;
         border-bottom-right-radius:0;
     }
 
     .hero{
         flex-basis:90%;
         padding:0;
+        line-height: normal;
+    }
+
+    .hero p{
+        margin:0;
     }
 
     .pack1,.pack2{
@@ -356,9 +411,51 @@ footer ul{
         text-align: center;
         margin: 4.5em 0 0 0;
     }
-.hero a{padding: 0.5em 1em;
 
-}
+    .product{
+        margin-bottom: 2rem;
+    }
+    .product h1{
+        text-align: left;
+        margin-left: 20% ;
+    }
+    .product a{
+        margin-left:-1em;
+    }
+    .product br {
+        display: none;
+    }
+    /*carousel*/
+
+    /* end of carousel*/
+
+    .hero a{
+        padding: 0.5em 1em;
+    }
+    .second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: ;
+    }
+    .divs-top-space{
+        margin-top: -1.2em;
+    }
+    .second h1,h2{
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .design{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding:0;
+    }
 }
 
 
