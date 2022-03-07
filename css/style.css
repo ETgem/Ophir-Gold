@@ -52,11 +52,16 @@ a{
     background-color: #3a78c0a3;
 }
 
+@media ( min-width: 501px){
+    .navbar input,.nav-toggle,.navbar label{
+        display:none;
+    }
+}
+    
 .navbar{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .navbar h1{
@@ -76,10 +81,10 @@ a{
     padding-left: 2.2em;
 }
 
-  /* (B) HORIZONTAL MENU ITEMS */
 .menu { 
     display: flex;
 }
+
 .menu a{ 
     border: 1px solid #bc8600;
     border-radius: 0.5em;
@@ -161,12 +166,10 @@ footer .links a:hover,.contact a:hover{
     z-index: 1;    
     line-height: 1.5em;
 }
-
     /* Advantages of product */ 
-
 .uses {
-    z-index: 1;
     position: relative;
+    z-index: 1;    
 }
 
 .uses>h1{
@@ -200,7 +203,6 @@ footer .links a:hover,.contact a:hover{
     padding-right: 1em;
     color:rgb(255, 183, 3);
 }
-
 .product{
     padding: 0em 1.5em;
 }
@@ -362,11 +364,18 @@ footer ul{
     padding-left:1em;
 }
 
+
+/*1330px and below*/
+@media (max-width: 1330px){
+    .approval{
+        position: relative;
+    }
+}
+
 @media (max-width: 840px){
     .hero{
         width: 85%;
     }
-
 }
 
 /* Tablets*/
@@ -374,6 +383,7 @@ footer ul{
     .navbar{
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
     .container{
         padding:0 0.5em 4em 0.5em;
@@ -517,7 +527,6 @@ footer ul{
         margin-bottom: 1em;
         margin-right: 1em;
     }
-
     nav a{
         color: white;
         text-decoration: none;
@@ -531,10 +540,6 @@ footer ul{
     }
 
    /*end of nav*/
-
-
-
-
 
     .container{
         padding:1rem 0.5em 7em 0.5em;
