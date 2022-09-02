@@ -129,17 +129,18 @@ footer .links a:hover,.contact a:hover{
     color: rgb(2, 48, 71);
 }
 
-.hero p{
+.hero h2{
     font-size: 1em;
     padding-bottom: 2em ;
     color: rgb(2, 48, 71);
     line-height: 1.5em;
     font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
 }
 
 .hero a{
     color:#bc8600;
-    background: rgba(222, 236, 242, 1.0);
+    background: rgba(222, 236, 242, 0.7);
     margin: 0 auto;
     border: 1px solid black;
     border-radius: 0.5em;
