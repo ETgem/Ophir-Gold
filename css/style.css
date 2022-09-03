@@ -68,16 +68,17 @@ a{
     color: #CC8700;
     font-size: 1.5em ;
     margin-left: 0.1em;
+    font-weight: bolder;
 }
 
-.gold{
-    color: #523106;
+.navbar h1 .purple {
+    color: #4e2d3f;
 }
 
 .logogroup{
     display: flex;
     align-items: center;
-    width:auto;
+    min-width: 25%;
     padding-left: 2.2em;
 }
 
@@ -107,8 +108,8 @@ footer .links a:hover,.contact a:hover{
     font-size: 1.3em;
 }
 .logo{ 
-    width: 30%;
-    min-width: 6em;
+    /*width: 25%;*/
+    min-width: 2em;
     height: auto;
     float:left;
 }
@@ -231,7 +232,7 @@ footer .links a:hover,.contact a:hover{
     font-size: 3rem;
     font-family: 'Expletus Sans', cursive;
 }
-  
+
 .reasons .greet h1{
     border-top: 0;
 }
@@ -379,8 +380,8 @@ footer .design i{
 
 
 .eggold{
-    width:80%;
-    margin-top: 1em;
+    width:60%;
+    margin-top: 0.5em;
 }
 
 footer a{
@@ -494,6 +495,7 @@ footer ul{
     .grid-2{
         grid-area: grid-2;
     }
+
     footer .second{
         display: flex;
         justify-content: space-around;
@@ -546,6 +548,17 @@ footer ul{
 
     .navbar{
         justify-content: space-between;
+    }
+
+    .hero h1{
+        font-size: 2em;
+    }
+
+    .logogroup{
+        font-size: 0.9em;
+    }
+    .logo{
+        width:30%;
     }
     .nav-toggle{
         display: none;
@@ -727,15 +740,21 @@ footer ul{
         justify-content: ;
     }
     .divs-top-space{
-        margin-top: -1.2em;
+        margin-top: -1.7em;
     }
     .second h1,h2{
         text-align: center;
     }
 
-    .links {
+    footer .links {
         display: flex;
         justify-content: center;
+        font-size: 0.8rem;
+    }
+    footer .links a {
+        padding-right:0.2rem;
+        padding-left: 0.2rem;
+        margin-right: 0em;
     }
 
     .design{
@@ -746,7 +765,18 @@ footer ul{
     }
 }
 
+@media (max-width: 360px){
+    .reasons .greet{
+        font-size: 2.5rem;
+        margin-bottom: 0.7rem;
+    }
 
+    .prod3 h1{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /*ABOUT*/
 
@@ -859,7 +889,7 @@ footer ul{
 
 
 Label{
-    margin:1em 1em 1em 0.5em;
+    margin:0 1em 1em 0.5em;
     font-weight: bold;
 }
 
